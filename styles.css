@@ -1,0 +1,225 @@
+*{
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+header div.top-nav{
+	background-color: red;
+	position: sticky;
+}
+header div.top-nav ul{
+	display: flex;
+	align-content: space-around;
+	justify-content: space-around;
+	padding-top:3rem;
+	padding-bottom: 2rem;
+}
+header div.top-nav ul li a{
+	color: white;
+}
+header div.snacks-drinks ul{
+	display: flex;
+	justify-content: space-around;
+	padding-top:2rem;
+	padding-bottom: 1rem;
+}
+header div.snacks-drinks img {
+	background-color: lightpink;
+
+}
+header div.snacks-drinks ul li a{
+	color:red;
+	font-size: 20px;
+	 
+}
+/*login and resgistration stylling*/
+
+div.login-register{
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+
+}
+/*login form login form login form*/
+div.login-register div.login{
+	flex: 1;
+	background-color: aliceblue;
+	border-radius: 10px;
+}
+/*register register register*/
+div.login-register div.register{
+	flex: 1;
+	background-color: aliceblue;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+/*all input(!=type=submit and reset) all input all anput*/
+input[type=text],input[type=email],input[type=password], input[type=number] ,select{
+	margin: 20px auto;
+	width: 50%;
+	padding: 1rem;
+	border:1px solid red;
+	border-radius: 10px;
+	text-align: left;
+	font-size: 20px;
+}
+h3{
+	color: red;
+	float: left;
+	width: 200px;
+	margin:0;
+}
+ input[type=submit], input[type=reset]{
+	width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*slides show container goes here*/
+
+main div.img-slide-container{
+	left:0;
+	width: 100%;
+	height: 100vh;
+	animation: animate 10s ease-in-out infinite;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+@keyframes animate{
+	0%, 100%{background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/chyken.jpg");}
+	25%{background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/piza.jpg");}
+	50%{background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/bq.jpg");}
+	75%{background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/chyken.jpg");}
+}
+/*order slide-image*/
+main div.order-banner{
+	width: 100%;
+	height: 200px;
+	background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/b2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+main div.oder-form-container{
+	background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/chyken.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height:600px;
+}
+main div.order-form{
+	width: 50%;
+	height: 400px;
+	background-color: black;
+	position: absolute;
+	left: 400px;
+	opacity: 0.5;
+	border-radius: 40px;
+}
+main div.order-form form{
+	margin-top:100px
+}
+/*sample-meal styles*/
+main div.meal-containtainer{
+	display: flex;
+	justify-content: space-between;
+}
+main div.sample-meal {
+	width: 310px;
+	height:auto;
+}
+main div.sample-meal img{
+	width: 300px;
+	height: 300px;
+}
+main div.sample-meal div.details{
+	padding:15px;
+	text-align: center;
+	font-size: 30px;
+	color: red;
+}
+main div.sample-meal:hover{
+	border:2px solid red;
+	border-radius: 10px;
+}
+
+ /*footer goes here*/
+ footer{
+ 	width: 100%;
+ 	height: 400px;
+ 	opacity: 0.5;
+ 	border-radius: 5px;
+ 	margin-bottom: 20px;
+ 	background-color: black;
+ }
+ /*cart style here cart style here*/
+ main div.cart-container{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex: 1;
+ }
+  main div.cart-container div{
+  	width: 45%;
+  	height: auto;
+  	background-color: rgb(255, 128, 128);
+  	opacity: 0.8;
+  	border-radius: 15px;
+  }
+ main div.cart-container div.cart-menu-left{
+ 	flex: 1;
+ }
+  main div.cart-container div.cart-menu-left li{
+  	padding: 15px 20px;
+  	font-size: 20px;
+  	font-family: 'poppins', sans-serif;
+  	text-transform: capitalize;
+  }
+  main div.cart-container div.cart-menu-left li a{
+  	color: white;
+
+  }
+  main div.cart-container div.cart-menu-left li:hover{
+  	background-color: darkred;
+  	color: red;
+  	border-radius: 20px;
+  	background-image: url("C:/Users/HIGH CHIEF/Desktop/cruzanto/images/Rice-Header1.jpg");
+  }
+ main div.cart-container div.cart-menu-right{
+ 	flex: 3;
+ 	border-left: 1px solid white;
+ }
+  main div.cart-container div.cart-menu-right h2{
+  	padding: 10px;
+  	background-color: rgba(0, 0, 0, 0.8);
+  	color: white;
+  	width: 80%;
+  	border-radius: 30px;
+  	text-transform: uppercase;
+  	font-size: 50px;
+ }
+ main div.cart-container div.cart-menu-right ul li label{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex: 1;
+ 	padding: 20px 10px;
+ }
+  main div.cart-container div.cart-menu-right ul li label input{
+  	flex: 0.5;
+  	width: 50px;
+  	height: 50px;
+  }
+   main div.cart-container div.cart-menu-right ul li label span{
+   	flex: 2;
+   	font-size: 40px;
+   	color: white;
+   	text-transform: capitalize;
+   }
+    main div.cart-container div.cart-menu-right ul li label img{
+    	flex: 3;
+    	width: 200px;
+    	height: 100px;
+    }
